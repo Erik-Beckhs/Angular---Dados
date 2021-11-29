@@ -1,0 +1,10 @@
+<div class=" text-center">
+  <div class="p-5">
+    <button (click)="tirarDados()" [disabled]="!activo" class="btn btn-success btn-lg">Tirar Dados</button>
+  </div>
+  <img class="img" [src]="izquierda" >
+  <img class="img" [src]="derecha" >
+  <div>
+    <h3><span class="badge bg-success" *ngIf="ganaste">GANASTE!!!</span></h3>
+  </div>
+</div>
